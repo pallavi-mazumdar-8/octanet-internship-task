@@ -185,7 +185,7 @@ public class ATMInterface
 	public static void main(String args[])
 	{
 		System.out.println("***********Welcome to ATM INTERFACE***********");
-		System.out.println("1.Register \n2.Exit");
+		System.out.println("1.Register \n2.Quit");
 		System.out.println("Enter your choice:");
 		int choice=takeIntegerInput(2);
 		
@@ -195,7 +195,7 @@ public class ATMInterface
 			b.signup();
 			while(true)
 			{
-				System.out.println("1.Login \n2.Exit");
+				System.out.println("1.Login \n2.Quit");
 		System.out.println("Enter your choice:");
 		int ch=takeIntegerInput(2);
 		
