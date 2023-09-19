@@ -18,7 +18,7 @@ public void signup()
 	System.out.println("Enter your Account Number:");
 	accountno = scan.nextLine();
 	System.out.println("Registration completed.Kindly login..");
-	System.out.println("*******************************************");
+	System.out.println("***************************************");
 }
 public boolean login()
 {
@@ -76,7 +76,7 @@ public void withdraw()
 	catch(Exception ex)
 	{
 	}
-	System.out.println("**********************************************");
+	System.out.println("*******************************************");
 }
 public void deposit()
 {
@@ -135,7 +135,7 @@ public void transfer()
 		catch(Exception e)
 		{
 		}
-		System.out.println("*************************************************");
+		System.out.println("********************************************");
 	}
 	
 	public void transactionHistory()
@@ -148,7 +148,7 @@ public void transfer()
 		{
 			System.out.println("\n" + transactionHistory);
 		}
-		System.out.println("*************************************************");
+		System.out.println("*********************************************");
 	}
 }
 
@@ -184,7 +184,7 @@ public class ATMInterface
 	
 	public static void main(String args[])
 	{
-		System.out.println("*************Welcome to ATM INTERFACE************");
+		System.out.println("***********Welcome to ATM INTERFACE***********");
 		System.out.println("1.Register \n2.Exit");
 		System.out.println("Enter your choice:");
 		int choice=takeIntegerInput(2);
@@ -203,7 +203,7 @@ public class ATMInterface
 		{
 			if(b.login())
 			{
-				System.out.println("*************Welcome back "+b.name+ "**********");
+				System.out.println("***********Welcome back "+b.name+ "**********");
 				boolean isFinished=false;
 				while(!isFinished)
 				{
