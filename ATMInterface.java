@@ -137,11 +137,6 @@ public void transfer()
 		}
 		System.out.println("*************************************************");
 	}
-	public void checkBalance()
-	{
-		System.out.println("\n" + balance);
-		System.out.println("**************************************************");
-	}
 	
 	public void transactionHistory()
 	{
@@ -212,7 +207,7 @@ public class ATMInterface
 				boolean isFinished=false;
 				while(!isFinished)
 				{
-					System.out.println("\n1.Transactions History \n2.Withdraw \n3.Deposit \n4.Transfer \n5.Check Balance \n6.Exit");
+					System.out.println("\n1.Transactions History \n2.Withdraw \n3.Deposit \n4.Transfer \n5.Quit");
 					System.out.println("Enter your choice: ");
 					int c=takeIntegerInput(6);
 					switch(c)
@@ -230,9 +225,6 @@ public class ATMInterface
 						b.transfer();
 						break;
 						case 5:
-						b.checkBalance();
-						break;
-						case 6:
 						isFinished=true;
 						break;
 					}
